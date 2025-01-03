@@ -4,18 +4,9 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                echo 'Hello World'
+                git https://github.com/ScaleSec/vulnado
             }
         }
-        stage('test') {
-            steps {
-                echo 'test'
-            }
-        }
-        stage('deploy') {
-            steps {
-                echo 'build'
-            }
-        }
+       
     }
 }
