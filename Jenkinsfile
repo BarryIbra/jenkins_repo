@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                git https://github.com/ScaleSec/vulnado
+                git "https://github.com/ScaleSec/vulnado"
             }
         }
        
