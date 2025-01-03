@@ -10,7 +10,7 @@ pipeline {
                 git "https://github.com/ScaleSec/vulnado"
             }
         }
-        stage("Buil"){
+        stage("Build"){
             steps{
                 sh "mvn clean package"// compile et package le projet
             }
